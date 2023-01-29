@@ -1,7 +1,7 @@
 
 if [ -z "$1" ]
 then
-  a="(No description)"
+  a="num 7"
 else
   a="$1"
 fi

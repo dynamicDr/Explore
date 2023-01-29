@@ -10,11 +10,11 @@ from rsoccer_gym.vss.env_ma import *
 def train():
     ######### Hyperparameters #########
     env_name = "SSLShootEnv-v0"
-    number = 6
+    number = 7
     random_seed = 0
     gamma = 0.99  # discount for future rewards
     batch_size = 100  # num of transitions sampled from replay buffer
-    lr = 0.001
+    lr = 0.0001
     exploration_noise = 0.1
     polyak = 0.995  # target policy update parameter (1-tau)
     policy_noise = 0.2  # target policy smoothing noise
@@ -34,9 +34,7 @@ def train():
         'gamma': gamma,
         'batch_size': batch_size,
         'lr': lr,
-        'init_noise': init_noise,
-        'min_noise': min_noise,
-        'noise_decay_step': noise_decay_step,
+        'exploration_noise': exploration_noise,
         'polyak': polyak,
         'policy_noise': policy_noise,
         'noise_clip': noise_clip,
@@ -53,7 +51,6 @@ def train():
     state_dim = env.observation_space.shape[0]
     action_dim = env.action_space.shape[0]
     max_action = float(env.action_space.high[0])
-    noise = init_noise
 
     policy = TD3(lr, state_dim, action_dim, max_action)
     replay_buffer = ReplayBuffer()
@@ -111,7 +108,7 @@ def train():
                 policy.update(replay_buffer, t, batch_size, gamma, polyak, policy_noise, noise_clip, policy_delay)
                 break
 
-        print("Episode: {}\tStep: {}k\tReward: {}\tGoal: {} \tDone Type: {} \tEpi_step: {} \t Noise: {}".format(episode,int(total_step / 1000),round(ep_reward,2),info["goal"],done_type,ep_step,noise))
+        print("Episode: {}\tStep: {}k\tReward: {}\tGoal: {} \tDone Type: {} \tEpi_step: {} ".format(episode,int(total_step / 1000),round(ep_reward,2),info["goal"],done_type,ep_step))
 
         # logging updates:
         writer.add_scalar("reward", ep_reward, global_step=episode)

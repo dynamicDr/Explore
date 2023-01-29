@@ -12,7 +12,7 @@ def extract_step_numbers(env_name,exp_number):
     return sorted(step_numbers)
 
 if __name__ == '__main__':
-    number = 5
+    number = 6
     max_episode = 100
     display = False
     exp_numbers = extract_step_numbers("SSLShootEnv-v0",number)
