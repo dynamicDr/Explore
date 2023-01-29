@@ -1,0 +1,11 @@
+
+exp_x_k_step 112
+test_match_number 100
+goal 0
+opp_goal 0
+avg_episode_step 25.55
+done_robot_out 7
+done_ball_out 50
+done_left_out 39
+done_robot_in_gk_area 0
+================================
