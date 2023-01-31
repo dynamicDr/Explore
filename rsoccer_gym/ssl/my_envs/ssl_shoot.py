@@ -269,15 +269,15 @@ class SSLShootEnv(SSLBaseEnv):
             robot_grad_rw = 0.2 * self.__robot_grad_rw()
             self.reward_shaping_total['rw_robot_grad'] += robot_grad_rw
 
-            robot_orientation_rw = 0
-            if self.possession_robot_idx == self.active_robot_idx:
-                robot_orientation_rw = 0.2 * self.__robot_orientation_rw()
-                self.reward_shaping_total['rw_robot_orientation'] += robot_orientation_rw
+            # robot_orientation_rw = 0
+            # if self.possession_robot_idx == self.active_robot_idx:
+            #     robot_orientation_rw = 0.2 * self.__robot_orientation_rw()
+            #     self.reward_shaping_total['rw_robot_orientation'] += robot_orientation_rw
 
             energy_rw = -self.__energy_pen() / self.energy_scale
             self.reward_shaping_total['rw_energy'] += energy_rw
 
-            reward = ball_grad_rw + robot_grad_rw +  robot_orientation_rw + energy_rw
+            reward = ball_grad_rw + robot_grad_rw + energy_rw
 
         done = done
         return reward, done
@@ -425,8 +425,6 @@ class SSLShootEnv(SSLBaseEnv):
         assert (self.last_frame is not None)
 
         # Goal pos
-        up_goalpost = np.array([self.field.length / 2 , self.field.goal_width/2])
-        down_goalpost = np.array([self.field.length / 2 , -self.field.goal_width/2])
         mid_goalpost = np.array([self.field.length / 2, 0.])
 
         # Calculate previous ball dist
@@ -434,11 +432,11 @@ class SSLShootEnv(SSLBaseEnv):
         ball = self.frame.ball
 
         last_ball_pos = np.array([last_ball.x, last_ball.y])
-        last_ball_dist = min(np.linalg.norm(up_goalpost - last_ball_pos),np.linalg.norm(down_goalpost - last_ball_pos), np.linalg.norm(mid_goalpost - last_ball_pos))
+        last_ball_dist = np.linalg.norm(mid_goalpost - last_ball_pos)
 
         # Calculate new ball dist
         ball_pos = np.array([ball.x, ball.y])
-        ball_dist = min(np.linalg.norm(up_goalpost - ball_pos),np.linalg.norm(down_goalpost - ball_pos),np.linalg.norm(mid_goalpost - ball_pos))
+        ball_dist = np.linalg.norm(mid_goalpost - ball_pos)
 
 
         ball_grad = last_ball_dist - ball_dist

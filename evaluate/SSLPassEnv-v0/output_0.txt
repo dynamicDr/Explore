@@ -1,0 +1,497 @@
+
+exp_x_k_step 109
+test_match_number 100
+goal 11
+opp_goal 19
+avg_episode_step 21.5
+done_ball_out 70
+done_robot_out 0
+================================
+exp_x_k_step 216
+test_match_number 100
+goal 12
+opp_goal 23
+avg_episode_step 20.71
+done_ball_out 63
+done_robot_out 1
+================================
+exp_x_k_step 323
+test_match_number 100
+goal 11
+opp_goal 34
+avg_episode_step 20.51
+done_ball_out 53
+done_robot_out 1
+================================
+exp_x_k_step 428
+test_match_number 100
+goal 13
+opp_goal 16
+avg_episode_step 21.36
+done_ball_out 69
+done_robot_out 0
+================================
+exp_x_k_step 536
+test_match_number 100
+goal 7
+opp_goal 24
+avg_episode_step 25.12
+done_ball_out 68
+done_robot_out 0
+================================
+exp_x_k_step 641
+test_match_number 100
+goal 13
+opp_goal 20
+avg_episode_step 18.02
+done_ball_out 64
+done_robot_out 3
+================================
+exp_x_k_step 748
+test_match_number 100
+goal 11
+opp_goal 17
+avg_episode_step 22.3
+done_ball_out 69
+done_robot_out 3
+================================
+exp_x_k_step 854
+test_match_number 100
+goal 11
+opp_goal 21
+avg_episode_step 19.27
+done_ball_out 67
+done_robot_out 1
+================================
+exp_x_k_step 959
+test_match_number 100
+goal 6
+opp_goal 22
+avg_episode_step 21.48
+done_ball_out 71
+done_robot_out 0
+================================
+exp_x_k_step 1068
+test_match_number 100
+goal 12
+opp_goal 20
+avg_episode_step 22.19
+done_ball_out 63
+done_robot_out 3
+================================
+exp_x_k_step 1177
+test_match_number 100
+goal 12
+opp_goal 17
+avg_episode_step 22.9
+done_ball_out 70
+done_robot_out 0
+================================
+exp_x_k_step 1285
+test_match_number 100
+goal 10
+opp_goal 17
+avg_episode_step 22.71
+done_ball_out 71
+done_robot_out 0
+================================
+exp_x_k_step 1393
+test_match_number 100
+goal 12
+opp_goal 22
+avg_episode_step 21.56
+done_ball_out 66
+done_robot_out 0
+================================
+exp_x_k_step 1501
+test_match_number 100
+goal 11
+opp_goal 24
+avg_episode_step 20.66
+done_ball_out 64
+done_robot_out 1
+================================
+exp_x_k_step 1611
+test_match_number 100
+goal 7
+opp_goal 19
+avg_episode_step 25.31
+done_ball_out 70
+done_robot_out 2
+================================
+exp_x_k_step 1721
+test_match_number 100
+goal 12
+opp_goal 20
+avg_episode_step 19.85
+done_ball_out 65
+done_robot_out 0
+================================
+exp_x_k_step 1832
+test_match_number 100
+goal 14
+opp_goal 16
+avg_episode_step 20.66
+done_ball_out 67
+done_robot_out 2
+================================
+exp_x_k_step 1944
+test_match_number 100
+goal 16
+opp_goal 22
+avg_episode_step 22.1
+done_ball_out 55
+done_robot_out 5
+================================
+exp_x_k_step 2055
+test_match_number 100
+goal 11
+opp_goal 16
+avg_episode_step 23.72
+done_ball_out 73
+done_robot_out 0
+================================
+exp_x_k_step 2165
+test_match_number 100
+goal 7
+opp_goal 22
+avg_episode_step 22.53
+done_ball_out 69
+done_robot_out 2
+================================
+exp_x_k_step 2277
+test_match_number 100
+goal 16
+opp_goal 16
+avg_episode_step 23.32
+done_ball_out 67
+done_robot_out 1
+================================
+exp_x_k_step 2385
+test_match_number 100
+goal 11
+opp_goal 23
+avg_episode_step 21.92
+done_ball_out 62
+done_robot_out 2
+================================
+exp_x_k_step 2492
+test_match_number 100
+goal 16
+opp_goal 18
+avg_episode_step 19.44
+done_ball_out 66
+done_robot_out 0
+================================
+exp_x_k_step 2599
+test_match_number 100
+goal 12
+opp_goal 15
+avg_episode_step 21.02
+done_ball_out 71
+done_robot_out 2
+================================
+exp_x_k_step 2710
+test_match_number 100
+goal 8
+opp_goal 25
+avg_episode_step 22.82
+done_ball_out 64
+done_robot_out 1
+================================
+exp_x_k_step 2818
+test_match_number 100
+goal 10
+opp_goal 17
+avg_episode_step 23.2
+done_ball_out 73
+done_robot_out 0
+================================
+exp_x_k_step 2923
+test_match_number 100
+goal 9
+opp_goal 20
+avg_episode_step 22.05
+done_ball_out 69
+done_robot_out 1
+================================
+exp_x_k_step 3031
+test_match_number 100
+goal 7
+opp_goal 22
+avg_episode_step 22.01
+done_ball_out 68
+done_robot_out 1
+================================
+exp_x_k_step 3140
+test_match_number 100
+goal 7
+opp_goal 14
+avg_episode_step 21.91
+done_ball_out 77
+done_robot_out 2
+================================
+exp_x_k_step 3248
+test_match_number 100
+goal 9
+opp_goal 26
+avg_episode_step 20.89
+done_ball_out 65
+done_robot_out 0
+================================
+exp_x_k_step 3357
+test_match_number 100
+goal 7
+opp_goal 20
+avg_episode_step 21.15
+done_ball_out 69
+done_robot_out 4
+================================
+exp_x_k_step 3464
+test_match_number 100
+goal 14
+opp_goal 17
+avg_episode_step 21.75
+done_ball_out 63
+done_robot_out 4
+================================
+exp_x_k_step 3572
+test_match_number 100
+goal 4
+opp_goal 19
+avg_episode_step 24.4
+done_ball_out 75
+done_robot_out 1
+================================
+exp_x_k_step 3679
+test_match_number 100
+goal 9
+opp_goal 24
+avg_episode_step 20.89
+done_ball_out 66
+done_robot_out 1
+================================
+exp_x_k_step 3787
+test_match_number 100
+goal 14
+opp_goal 12
+avg_episode_step 18.99
+done_ball_out 72
+done_robot_out 2
+================================
+exp_x_k_step 3895
+test_match_number 100
+goal 11
+opp_goal 29
+avg_episode_step 19.58
+done_ball_out 58
+done_robot_out 2
+================================
+exp_x_k_step 4002
+test_match_number 100
+goal 7
+opp_goal 18
+avg_episode_step 23.31
+done_ball_out 74
+done_robot_out 1
+================================
+exp_x_k_step 4110
+test_match_number 100
+goal 10
+opp_goal 20
+avg_episode_step 21.41
+done_ball_out 69
+done_robot_out 0
+================================
+exp_x_k_step 4214
+test_match_number 100
+goal 10
+opp_goal 12
+avg_episode_step 22.12
+done_ball_out 75
+done_robot_out 1
+================================
+exp_x_k_step 4320
+test_match_number 100
+goal 9
+opp_goal 14
+avg_episode_step 21.52
+done_ball_out 75
+done_robot_out 1
+================================
+exp_x_k_step 4425
+test_match_number 100
+goal 13
+opp_goal 20
+avg_episode_step 20.87
+done_ball_out 64
+done_robot_out 1
+================================
+exp_x_k_step 4530
+test_match_number 100
+goal 13
+opp_goal 26
+avg_episode_step 21.04
+done_ball_out 58
+done_robot_out 2
+================================
+exp_x_k_step 4636
+test_match_number 100
+goal 17
+opp_goal 10
+avg_episode_step 20.16
+done_ball_out 72
+done_robot_out 0
+================================
+exp_x_k_step 4743
+test_match_number 100
+goal 16
+opp_goal 17
+avg_episode_step 19.85
+done_ball_out 64
+done_robot_out 2
+================================
+exp_x_k_step 4849
+test_match_number 100
+goal 15
+opp_goal 20
+avg_episode_step 19.14
+done_ball_out 64
+done_robot_out 1
+================================
+exp_x_k_step 4956
+test_match_number 100
+goal 14
+opp_goal 22
+avg_episode_step 22.0
+done_ball_out 61
+done_robot_out 1
+================================
+exp_x_k_step 5060
+test_match_number 100
+goal 14
+opp_goal 20
+avg_episode_step 20.01
+done_ball_out 65
+done_robot_out 1
+================================
+exp_x_k_step 5166
+test_match_number 100
+goal 17
+opp_goal 12
+avg_episode_step 22.88
+done_ball_out 69
+done_robot_out 2
+================================
+exp_x_k_step 5270
+test_match_number 100
+goal 15
+opp_goal 15
+avg_episode_step 18.39
+done_ball_out 68
+done_robot_out 1
+================================
+exp_x_k_step 5372
+test_match_number 100
+goal 7
+opp_goal 19
+avg_episode_step 22.11
+done_ball_out 74
+done_robot_out 0
+================================
+exp_x_k_step 5476
+test_match_number 100
+goal 14
+opp_goal 11
+avg_episode_step 19.8
+done_ball_out 73
+done_robot_out 0
+================================
+exp_x_k_step 5580
+test_match_number 100
+goal 14
+opp_goal 21
+avg_episode_step 21.05
+done_ball_out 64
+done_robot_out 0
+================================
+exp_x_k_step 5683
+test_match_number 100
+goal 9
+opp_goal 19
+avg_episode_step 19.13
+done_ball_out 71
+done_robot_out 0
+================================
+exp_x_k_step 5790
+test_match_number 100
+goal 13
+opp_goal 13
+avg_episode_step 21.06
+done_ball_out 73
+done_robot_out 1
+================================
+exp_x_k_step 5894
+test_match_number 100
+goal 12
+opp_goal 20
+avg_episode_step 17.9
+done_ball_out 67
+done_robot_out 0
+================================
+exp_x_k_step 5997
+test_match_number 100
+goal 8
+opp_goal 27
+avg_episode_step 21.23
+done_ball_out 63
+done_robot_out 2
+================================
+exp_x_k_step 6101
+test_match_number 100
+goal 11
+opp_goal 18
+avg_episode_step 18.5
+done_ball_out 69
+done_robot_out 2
+================================
+exp_x_k_step 6204
+test_match_number 100
+goal 12
+opp_goal 17
+avg_episode_step 19.96
+done_ball_out 71
+done_robot_out 0
+================================
+exp_x_k_step 6308
+test_match_number 100
+goal 11
+opp_goal 20
+avg_episode_step 20.91
+done_ball_out 66
+done_robot_out 2
+================================
+exp_x_k_step 6411
+test_match_number 100
+goal 8
+opp_goal 19
+avg_episode_step 21.76
+done_ball_out 72
+done_robot_out 0
+================================
+exp_x_k_step 6515
+test_match_number 100
+goal 12
+opp_goal 19
+avg_episode_step 17.57
+done_ball_out 68
+done_robot_out 0
+================================
+exp_x_k_step 6617
+test_match_number 100
+goal 13
+opp_goal 18
+avg_episode_step 17.62
+done_ball_out 68
+done_robot_out 0
+================================

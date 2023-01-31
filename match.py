@@ -7,8 +7,8 @@ from rsoccer_gym.ssl import *
 
 
 def match(env_name, number, step_k, max_episode, display):
-    print(f"match for number {number} {step_k}k ckp...")
-    env = gym.make('SSLShootEnv-v0')
+    print(f"match for {env_name} number {number} {step_k}k model...")
+    env = gym.make(env_name)
     state_dim = env.observation_space.shape[0]
     action_dim = env.action_space.shape[0]
     max_action = float(env.action_space.high[0])
@@ -24,7 +24,10 @@ def match(env_name, number, step_k, max_episode, display):
 
     goal_num = 0
     opp_num = 0
-    done_stats = {'done_robot_out': 0, 'done_ball_out': 0, 'done_left_out': 0,'done_robot_in_gk_area':0}
+    done_stats = {}
+    for done_stat in env.reward_shaping_total:
+        if done_stat.startswith("done_"):
+            done_stats[done_stat] = 0
     avg_episode_step = 0
     for episode in range(max_episode):
         obs = env.reset()
@@ -71,11 +74,11 @@ def match(env_name, number, step_k, max_episode, display):
 
 
 if __name__ == '__main__':
-    number = 58
-    step_k = 897
+    number = 7
+    step_k = 2093
     max_episode = 1000
     display = True
-    goal_num, opp_num, done_stats, avg_episode_step = match(number, step_k, max_episode, display)
+    goal_num, opp_num, done_stats, avg_episode_step = match('SSLShootEnv-v0-v0',number, step_k, max_episode, display)
     print("goal ", goal_num,
           "opp_goal ", opp_num,
           "avg_episode_step ", avg_episode_step)

@@ -1,7 +1,7 @@
 
 if [ -z "$1" ]
 then
-  a="num 7"
+  a="Pass num 1"
 else
   a="$1"
 fi

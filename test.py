@@ -1,51 +1,32 @@
-import roboschool, gym
-from TD3 import TD3
-from PIL import Image
+import math
 
-def test():
-    env_name = "RoboschoolWalker2d-v1"
-    random_seed = 0
-    n_episodes = 3
-    lr = 0.002
-    max_timesteps = 2000
-    render = True
-    save_gif = False
-    
-    filename = "TD3_{}_{}".format(env_name, random_seed)
-    filename += '_solved'
-    directory = "./preTrained/{}".format(env_name)
-    
-    env = gym.make(env_name)
-    state_dim = env.observation_space.shape[0]
-    action_dim = env.action_space.shape[0]
-    max_action = float(env.action_space.high[0])
-    
-    policy = TD3(lr, state_dim, action_dim, max_action)
-    
-    policy.load_actor(directory, filename)
-    
-    for ep in range(1, n_episodes+1):
-        ep_reward = 0
-        state = env.reset()
-        for t in range(max_timesteps):
-            action = policy.select_action(state)
-            state, reward, done, _ = env.step(action)
-            ep_reward += reward
-            if render:
-                env.render()
-                if save_gif:
-                     img = env.render(mode = 'rgb_array')
-                     img = Image.fromarray(img)
-                     img.save('./gif/{}.jpg'.format(t))
-            if done:
-                break
-            
-        print('Episode: {}\tReward: {}'.format(ep, int(ep_reward)))
-        ep_reward = 0
-        env.close()        
-                
-if __name__ == '__main__':
-    test()
-    
-    
-    
+import gym
+import numpy as np
+from rsoccer_gym.ssl import *
+
+env = gym.make('SSLPassEnv-v0')
+
+ball_grad_sum = 0
+
+for i in range(10):
+    env.reset()
+    print(env.target_teammate_idx)
+    done = False
+    frame = 0
+    return_ = 0
+    while not done:
+        frame+=1
+        if frame >= 50:
+            break
+        # action = env.action_space.sample()
+        action = np.array([1,1,0,-1])
+
+        next_state, reward, done, info = env.step(action)
+        env.render()
+        # ball_grad_sum +=info["rw_robot_grad"]
+        # ball_grad_sum += info["rw_energy"]
+        # print("ball_dist",env.last_teammate_ball_dist)
+        print("reward[rw_robot_dist]",info["rw_robot_grad"])
+        # print("ball_dist",info["rw_ball_dist"])
+        # print("frame",frame,"reward",reward)
+    print(info)
